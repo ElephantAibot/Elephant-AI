@@ -1,0 +1,16 @@
+/ai-sales-agent
+├── README.md
+├── requirements.txt
+├── app.py
+├── /templates
+│   ├── index.html
+│   └── result.html
+├── /static
+│   ├── css
+│   │   └── style.css
+│   └── js
+├── /models
+│   ├── text_generator.py
+│   └── image_processor.py
+└── /utils
+    └── helpers.py (optional)
