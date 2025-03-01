@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generation Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Generation Results</h1>
+        
+        <div class="result-section">
+            {% if poster %}
+                <img src="{{ url_for('static', filename=poster) }}" class="poster-preview">
+            {% endif %}
+            
+            <div class="copy-result">
+                <h3>Marketing Copy:</h3>
+                <p>{{ copy }}</p>
+            </div>
+            
+            <a href="/" class="back-button">Return to Home</a>
+        </div>
+    </div>
+</body>
+</html>
