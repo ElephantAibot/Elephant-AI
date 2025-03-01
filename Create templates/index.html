@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Sales Agent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Sales Generator</h1>
+        
+        <div class="input-section">
+            <form method="post" enctype="multipart/form-data">
+                <div class="input-group">
+                    <h3>Text Input</h3>
+                    <input type="text" name="keywords" placeholder="Enter keywords...">
+                    <button type="submit">Generate Copy</button>
+                </div>
+                
+                <div class="or-divider">OR</div>
+                
+                <div class="input-group">
+                    <h3>Image Upload</h3>
+                    <input type="file" name="image" accept="image/*">
+                    <button type="submit">Create Poster</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
